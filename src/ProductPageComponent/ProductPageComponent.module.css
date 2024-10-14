@@ -1,0 +1,184 @@
+.wrapper {
+    /* width: 80% */
+    /* padding: 5rem;
+     */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+
+    padding: 5rem 1rem;
+    /* padding-top: 5rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* width: 70%; */
+
+    /* column-gap: 8rem;
+     */
+    /* padding-bottom: 5rem; */
+}
+
+.productInfo {
+    width: 35%;
+    max-width: 1000px;
+    /* padding: 10rem; */
+}
+.productInfo h1{
+    margin-bottom: 0px;
+    color: #742e48;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.productInfo h2{
+    margin-top: 0px;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px silver solid;
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    /* font-size: clamp(.9rem, 2vw, 1.1rem); */
+}
+
+.productInfo p {
+    margin-top: 2.5rem;
+    /* font-size: 1.1rem; */
+    font-size: clamp(1rem, 2vw, 1.1rem);
+}
+
+.productInfo p:nth-of-type(2) {
+    margin-top: 4rem;
+}
+
+.boldText {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: gray;
+}
+
+.quantityInput {
+    display: block;
+    width: 25px;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: .8rem 1rem;
+    margin-top: .5rem;
+    margin-bottom: 3rem;
+
+    outline: 1px solid black;
+}
+
+.addCartBtn {
+    width: 100%;
+    font-size: 1rem;
+    padding: .8rem 0rem;
+    border-radius: 20px;
+    border: 3px solid #742e48;
+    background-color: white;
+    color: #742e48;
+}
+
+.addCartBtn:hover {
+    background-color: #742e48;
+    color: white;
+}
+
+.productImg {
+   
+    width: 300px;
+    width: clamp(100px, 30vw,300px);
+    /* object-fit: cover; */
+}
+
+.imgContainer {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 50%; */
+}
+
+.containerEnd {
+    transform:translateY(+3rem);
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.containerStart {
+
+    width: max-content;
+    display: flex;
+    align-items: center;
+
+    opacity: 1;
+    transition: 1s ease-in-out;
+    /* border: 5px solid red; */
+
+    position: absolute;
+
+    /* left: 30%; */
+    bottom: 5%;
+}
+
+
+.notificationEnd {
+
+    width: 100%;
+
+    transform:translateY(+3rem);
+    opacity: 0;
+    transition: .5s ease-in-out;
+
+    border: 3px solid #742e48;
+    /* border: 2px solid white; */
+    padding: .8rem 5rem;
+    border-radius: 15px;
+
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+
+    /* background-color: #742e48; */
+    background-color: rgb(255,255,255, 0.9);
+    box-shadow: 2px 2px 8px #742e48;
+    
+     /* background: rgb(0,0,0);
+     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(116,46,72,1) 90%); */
+
+    /* color: white; */
+    color: #742e48;
+}
+
+.notificationStart {
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+
+@media (max-width: 650px) {
+    .container {
+        flex-direction: column;
+    }
+    .productInfo {
+        width: unset;
+        padding: 1rem 2rem;
+    }
+    .productImg {
+        width: 300px;
+        /* height: 400px;
+        object-fit: contain; */
+    }
+    
+}
+
+
+/* 
+    remove column gap and space evenly
+    remove width of container and add 1 or 2rem side padding
+    remove width of wrapper
+
+    add font size clamp to text
+    add width / height clamp to image
+*/

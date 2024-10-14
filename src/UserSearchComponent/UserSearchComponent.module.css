@@ -1,0 +1,42 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin-left: 1rem;
+    padding: .5rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.searchBar {
+    padding:.5rem;
+    font-size: 1.2rem;
+
+    border-radius: 15px;
+    outline: silver 3px solid;
+    border: none;
+}
+
+.searchBar::placeholder {
+    color: silver;
+}
+
+.searchBar::-webkit-search-cancel-button {
+    -webkit-appearance:none;
+
+}
+
+.icon {
+    font-size: 2.5rem;
+}

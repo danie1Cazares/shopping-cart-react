@@ -1,0 +1,378 @@
+.wrapper {
+    position: relative;
+}
+
+.bkgImg {
+
+    width: 100%;
+    height: 600px;
+    position: relative;
+    object-fit: cover;
+    object-position: top;
+    /* border-bottom: 50px solid black; */
+
+    background-image:
+    linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 77%),
+    url('https://www.apetogentleman.com/wp-content/uploads/2022/01/cocktail-attire-for-men.jpg');
+
+    background-position: top;
+    background-size:cover;
+}
+
+.imgOverlayContent {
+    position: absolute;
+    bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.textContent {
+    backdrop-filter: blur(1.5px);
+    border-radius: 50%;
+    text-shadow: 2px 2px 55px black, 1px 1px 3px black;
+    width: 30%;
+    color: white;
+    
+}
+
+
+.textContent h2 {
+font-size: 2rem;
+margin-bottom: .5rem;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.textContent p {
+/* font-size: 1.5rem; */
+font-size: 1.2rem;
+font-family: arial;
+margin-top: 0rem;
+}
+
+.button {
+    font-size: 1.5rem;
+    border: none;
+    font-weight: 400;
+    padding:1rem;
+
+    background-color: #742e48;
+    color: white;
+    border: 1px solid silver;
+}
+
+
+.banner {
+    /* background-color: black; */
+    background-color: #742e48;
+    width: 100%;
+    /* height: 200px; */
+    padding: 3rem 0rem;
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    justify-content: space-evenly;
+}
+
+.banner span {
+    /* font-size: 1.7rem; */
+    font-size: clamp(.9rem, 1.5vw, 1.7rem);
+
+    font-weight: 100;
+}
+
+.banner h2 {
+    margin: 0px;
+    /* font-size: 2.5rem; */
+    font-size: clamp(1rem, 2.1vw, 2.5rem);
+}
+
+.banner p {
+    margin: 0px;
+    margin-top: -5px;
+    /* font-size: 1.65rem; */
+    font-size: clamp(.8rem, 1.3vw, 1.65rem);
+    letter-spacing: .15rem;
+}
+
+.pointInfo {
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-right: 2rem;
+    padding-left: 2rem;
+
+    text-align: center;
+
+    /*
+    padding-top: 1rem;
+
+    border-right: 2px solid white; */
+
+}
+
+.pointInfo:nth-of-type(2){
+        
+    padding-top: 1rem;
+  
+
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+.pointInfo h2{
+    /* margin-top: -5px; */
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times;
+    letter-spacing: .20rem;
+
+}
+
+.pointInfo p {
+    margin-top: 0px;
+    /* font-size: 1rem; */
+    font-size: clamp(.8rem, 1.5vw, 1rem);
+}
+.memberLogo {
+    padding-left: 1rem;
+}
+.memberInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.memberLearnMore {
+    padding-right: 1rem;
+}
+.memberLearnMore h2 {
+    margin: 0px;
+    /* font-size: 1.5rem; */
+    font-size: clamp(.8rem, 1.5vw, 1.5rem);
+    
+}
+
+.memberLearnMore .linkContainer{
+    padding-top: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    column-gap: 2rem;
+}
+
+.memberLearnMore span {
+    /* padding-right: 2rem; */
+    padding-bottom: .2rem;
+    /* width: min-content; */
+
+    /* font-size: 1.1rem; */
+    font-size: clamp(.8rem, 1.6vw, 1.1rem);
+    border-bottom: 1px solid white;
+}
+
+.postContainer {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-evenly;
+
+    /* width: 425px; */
+
+}
+
+.latestPostSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.latestPostSection h1 {
+    padding-top: 3rem;
+    
+}
+
+.postContent:first-of-type .postImg{
+    /* object-position: -500px; */
+
+}
+
+
+.postImg {
+    /* width: 425px; */
+    width: clamp(2rem, 30vw, 425px);
+    /* height: 475px; */
+    height: clamp(2.2rem, 25vw, 475px);
+    object-fit:cover;
+    /* object-position: -500px; */
+}
+
+.postContent {
+    width: clamp(2rem, 30vw, 425px);
+    /* width: 425px; */
+    /* width: 100%; */
+
+}
+
+.postContent h4 {
+    font-size: .9rem;
+    letter-spacing: 1px;
+    color: gray;
+
+    padding: .5rem 0rem;
+}
+
+.postContent h3 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: left
+}
+
+.postContent p {
+    padding: .5rem 0rem;
+    margin: 0px;
+    font-size: 1.1rem;
+    font-weight: 100;
+    text-wrap: wrap;
+    text-align: left;
+}
+
+.postContent p:last-of-type{
+    width: fit-content;
+    font-weight: bold;
+    font-size: .9rem;
+    padding-bottom: .1rem;
+    border-bottom: 1px solid black;
+}
+
+.newArrivalSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.newArrivalSection h1 {
+    padding-top: 10rem;
+    padding-bottom: 1rem;
+}
+
+
+.productContainer {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: baseline;
+    justify-content: space-evenly;
+
+    /* width: 425px; */
+}
+
+
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.products h3 {
+    padding-top: 2rem;
+    font-size: 1.2rem;
+
+}
+.products p {
+    margin: 0px;
+    padding-top: .25rem;
+
+    color: slategrey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.productImg {
+    /* width: 250px;  */
+    width: clamp(2rem, 30vw, 400px); 
+    height: clamp(2rem, 30vw, 400px); 
+ 
+    /* object-fit:cover; */
+    object-fit: contain;
+}
+
+
+@media (max-width: 900px) {
+
+    .imgOverlayContent {
+        max-height: 300px;
+        overflow: hidden;
+    }
+
+    .textContent p {
+        font-size: 1rem;
+    }
+    .textContent h2 {
+        font-size: 1.3rem;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+    .memberInfo {
+        flex-direction: column;
+        padding: 2rem 0rem;
+    }
+    .pointInfo:nth-of-type(2){
+    
+        border-right: none;
+        border-left: none;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+    .pointInfo {
+        padding: 1rem 0rem;
+        width: 100%;
+    }
+    .banner h2 {
+        margin-bottom: .5rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .imgOverlayContent button {
+        font-size: 1rem;
+    }
+    .postContainer {
+        flex-direction: column;
+        row-gap: 5rem;
+    }
+    .postContent {
+        width: clamp(2rem, 50vw, 425px);
+    }
+    .postImg {
+        width: clamp(2rem, 50vw, 425px);
+        height: clamp(2.2rem, 45vw, 475px);
+    }
+    .productImg {
+        width: clamp(2rem, 50vw, 400px); 
+        height: clamp(2rem, 50vw, 400px); 
+    }
+    .productContainer {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .textContent p {
+        font-size: .9rem;
+    }
+    .textContent h2 {
+        font-size: 1.3rem;
+    }
+}
